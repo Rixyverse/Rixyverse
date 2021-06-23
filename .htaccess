@@ -1,0 +1,8 @@
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+RewriteEngine on
+RewriteRule ^activity\/ /activity.php
+RewriteRule ^login\/ /signin.php
+RewriteRule ^signup\/ /signup.php
+RewriteRule ^titles\/([0-9]+)[\/]?$ /titles.php?id=$1
+php_value display_errors 1
