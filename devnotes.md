@@ -7,15 +7,13 @@
 
 -Home page (but no logic)
 
--Login page (but no logic)
+-Login page
 
 -DB Connection
 
 -Header
 
 # What to do next:
--Logic of the login page
-
 -Activity Feed
 
 -Posts
