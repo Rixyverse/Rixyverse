@@ -34,25 +34,29 @@ if(isset($_SESSION['nickname'])){
                                         ];
                 
                                         $hashpass = password_hash($_POST['password'], PASSWORD_BCRYPT, $options);
-
-                                        $query = $db->prepare("INSERT INTO `users`(`nameid`, `nickname`, `password`, `description`, `avatarurl`) VALUES (:nameid,:nickname,:password,'', '')");
-                                        $query->execute([
-                                            'nameid' => $_POST['username'],
-                                            'nickname' => $_POST['nickname'],
-                                            'password' => $hashpass
-                                        ]);
-
+                                        try{
+                                            $query = $db->prepare("INSERT INTO `users`(`nameid`, `nickname`, `password`, `description`, `avatarurl`, `level`) VALUES (:nameid,:nickname,:password,'', '', 0)");
+                                            $query->execute([
+                                                'nameid' => $_POST['username'],
+                                                'nickname' => $_POST['nickname'],
+                                                'password' => $hashpass
+                                            ]);
+                                        }catch (PDOException $e){
+                                            echo "<div class='ll'>
+                                            <p><span class='red'>User ID already picked or unknown database error !</span></p></div>";
+                                            exit;
+                                       }
                                         $_SESSION['nickname'] = $_POST['username'];
                                         $_SESSION['level'] = 0;
 
                                         header('Location: /');
                                     }else{
                                         echo "<div class='ll'>
-                                        <p>Passwords don't match!</p></div>";
+                                        <p><span class='red'>Passwords don't match!</span></p></div>";
                                     }
                                 }else{
                                     echo "<div class='ll'>
-                                        <p>All fields are not completely filled in!</p></div>";
+                                        <p><span class='red'>All fields are not completely filled in!</span></p></div>";
                                 }
                             }
                         ?>
