@@ -4,5 +4,6 @@ RewriteEngine on
 RewriteRule ^activity\/ /activity.php
 RewriteRule ^login\/ /signin.php
 RewriteRule ^signup\/ /signup.php
+RewriteRule ^logout\/ /logout.php
 RewriteRule ^titles\/([0-9]+)[\/]?$ /titles.php?id=$1
 php_value display_errors 1
