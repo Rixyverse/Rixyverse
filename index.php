@@ -7,6 +7,20 @@ require_once("inc/connect.php")
 <body>
     <div id="container">
             <div id="main-body" class="guest-top">
+                <?php if(!isset($_SESSION['token'])){ ?>
+                <div id="about">
+                    <div id="about-inner">
+                        <div id="about-text">
+                            <h2 class="welcome-message">Welcome to Rixyverse !</h2>
+                            <p>Rixyverse is a damn gosh good Miiverse Clone in development and don't exepect so much of this, it's in development.</p>
+                            <div class="guest-terms-contents">
+                                <a class="guest-terms-link symbol" href="/info/rules">Rixyverse Rules</a>
+                            </div>
+                        </div>
+                        <img src="/assets/img/miiglobe.png" />
+                    </div>
+                </div>
+                <?php } ?>
                 <div class="community-main">
                     <div id="community-eyecatch"></div>
                 </div>
