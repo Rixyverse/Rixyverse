@@ -27,5 +27,7 @@ You won't need anything except the site files.
 
 Download the project, and setup the connect.php file, and after that, upload the site files to your htdocs folder or whatever it is, and you should be good to go!
 
+----
+
 ## I have a question...
 <a href="https://github.com/Rixyverse/Rixyverse-FAQ">here</a>
