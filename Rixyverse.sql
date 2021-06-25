@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : mer. 23 juin 2021 à 12:29
+-- Généré le : ven. 25 juin 2021 à 14:32
 -- Version du serveur :  8.0.25-0ubuntu0.21.04.1
 -- Version de PHP : 7.4.16
 
@@ -51,6 +51,17 @@ CREATE TABLE `titles` (
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `tokens`
+--
+
+CREATE TABLE `tokens` (
+  `token` varchar(255) COLLATE utf8_bin NOT NULL,
+  `linked_id` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `users`
 --
 
@@ -80,6 +91,12 @@ ALTER TABLE `posts`
 --
 ALTER TABLE `titles`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `tokens`
+--
+ALTER TABLE `tokens`
+  ADD UNIQUE KEY `token` (`token`);
 
 --
 -- Index pour la table `users`
