@@ -37,7 +37,8 @@ global $title;
                         <ul>
                             <li id="global-menu-feed"><a href="/activity/" class="symbol"><span>Activity Feed</span></a></li>
                             <li id="global-menu-community"><a href="/" class="symbol"><span>Communities</span></a></li>
-                            <li id="global-menu-news"><a href="/403" class="symbol"><span>nothing</span></a></li>
+                            <li id="global-menu-message"><a href="/news/msgs/" class="symbol"><span class="badge" style>1</span></a></li>
+                            <li id="global-menu-news"><a href="/news/" class="symbol"><span class="badge" style>1</span></a></li>
                             <!--Not working for now (because we don't have the needed js for this)-->
                             <li id="global-menu-my-menu"><button class="symbol js-open-global-my-menu open-global-my-menu"></button>
                                 <menu id="global-my-menu" class="invisible none">
