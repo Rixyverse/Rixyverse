@@ -14,14 +14,33 @@ function login($id){
     $_SESSION['token'] = $token;
     header("Location: /");
 }    
-function getUserData($nameid){
+function getUserDataByNameID($nameid){
     global $db;
-    $query2 = $db->prepare("SELECT * FROM `users` WHERE `nameid`=:nameid");
-    $query2->execute([
+    $query = $db->prepare("SELECT * FROM `users` WHERE `nameid`=:nameid");
+    $query->execute([
         'nameid' => $nameid
     ]);
-    $result = $query2->fetch();
+    $result = $query->fetch();
     return $result;
+}
+function getUserDataByID($id){
+    global $db;
+    $query = $db->prepare("SELECT * FROM `users` WHERE `id`=:id");
+    $query->execute([
+        'id' => $id
+    ]);
+    $result = $query->fetch();
+    return $result;
+}
+function getUserDataByToken($token){
+    global $db;
+    $query = $db->prepare("SELECT * FROM `tokens` WHERE `token`=:token");
+    $query->execute([
+        'token' => $token
+    ]);
+    $result = $query->fetch();
+    $result2 = getUserDataByID($result['linked_id']);
+    return $result2;
 }
 
 ?>
