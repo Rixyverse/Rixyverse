@@ -15,7 +15,7 @@ global $title;
         <meta property="og:image" content="/assets/img/favicon.png">
         <meta property="og:site_name" content="Rixyverse">
     </head>
-    <?php if(!isset($_SESSION['nickname'])){ ?>
+    <?php if(!isset($_SESSION['token'])){ ?>
     <body class="guest">
         <div id="sub-body">
             <menu id="global-menu">
@@ -29,7 +29,7 @@ global $title;
         </div>
     </body>
     <?php }else{ ?>
-    <body token="">
+    <body token="<?php echo $_SESSION['token'] ?>">
     <div id="sub-body">
             <menu id="global-menu">
                 <li id="global-menu-logo"><h1><a href="/"><img src="/assets/img/menu-logo.png" alt="Rixyverse"></a></h1></li>
