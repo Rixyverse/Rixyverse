@@ -4,9 +4,10 @@
 # Rixyverse
 A brand-new from scratch Miiverse Clone!
 
-# What I need to run this ?
+# What do I need to run this?
 
-Well, you need :
+If you are going to self-host, or run on a server that has nothing on it except a OS like ubuntu,
+You'll need:
 
 **-An Apache2 server**
 
@@ -16,9 +17,13 @@ Well, you need :
 
 **-PhpMyAdmin**
 
-First, download the whole project. Then, extract the content to /var/www/html/ or your Apache2 folder that you can put your PHP files on (I assume you have a Linux system to run this thing). After that, go to PhpMyAdmin and create a new db (or use an existing one) and import the DB Structure include in the archive. Finally, modifiy the file in /inc/connect.php to your MySQL (or MariaDB) ID and Password. (or eventually the host).
+First, download the project. Then, unpack the zip. Put the files into where you host the website, and setup the connect.php file You should be good to go.
 
-And you're good to go !
+If you are using a hosting provider (please don't use 000webhost, use infinityfree or heliohost)
 
-## I have a questi...
+You won't need anything except the site files.
+
+Download the project, and setup the connect.php file, and after that, upload the site files to your htdocs folder or whatever it is, and you should be good to go!
+
+## I have a question...
 <a href="https://github.com/Rixyverse/Rixyverse-FAQ">here</a>
