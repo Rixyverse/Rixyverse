@@ -21,7 +21,7 @@ First, download the project. Then, unpack the zip. Put the files into where you 
 
 ----
 
-### If you are using a hosting provider (please don't use 000webhost, use infinityfree or heliohost)
+### If you are using a hosting provider (please don't use 000webhost)
 
 You won't need anything except the site files.
 
