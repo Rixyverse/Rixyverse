@@ -2,6 +2,7 @@
 $title = "Sign Up";
 require_once("inc/header.php");
 require_once("inc/connect.php");
+require_once("inc/htm.php");
 if(isset($_SESSION['nickname'])){
     header("Location: /");
 }
@@ -46,10 +47,8 @@ if(isset($_SESSION['nickname'])){
                                             <p><span class='red'>User ID already picked or unknown database error !</span></p></div>";
                                             exit;
                                        }
-                                        $_SESSION['nickname'] = $_POST['username'];
-                                        $_SESSION['level'] = 0;
-
-                                        header('Location: /');
+                                       $result = getUserData($_POST['username']);
+                                        login($result['id']);
                                     }else{
                                         echo "<div class='ll'>
                                         <p><span class='red'>Passwords don't match!</span></p></div>";

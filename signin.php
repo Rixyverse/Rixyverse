@@ -2,6 +2,7 @@
 $title = "Login";
 require_once("inc/header.php");
 require_once("inc/connect.php");
+require_once("inc/htm.php");
 if(isset($_SESSION['nickname'])){
     header("Location: /");
 }
@@ -24,16 +25,10 @@ if(isset($_SESSION['nickname'])){
                     <?php
                     if(isset($_POST['form-submit'])){
                         if(!empty($_POST['username']) && !empty($_POST['username'])){
-                            $q = $db->prepare("SELECT * FROM `users` WHERE `nameid` = :username");
-                            $q->execute([
-                                "username" => $_POST['username']
-                            ]);
-                            $result = $q->fetch();
+                            $result = getUserData($_POST['username']);
                             if($result==true){
                                 if(password_verify($_POST['password'], $result['password'])){
-                                    $_SESSION['nickname'] = $_POST['username'];
-                                    $_SESSION['level'] = $result['level'];
-                                    header("Location: /");
+                                    login($result['id']);
                                 }else{
                                     echo "<div class='ll'>
                                     <p><span class='red'>Password incorrect!</span></p></div>";
