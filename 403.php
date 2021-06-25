@@ -7,3 +7,4 @@ require_once("inc/header.php");
             <p>You're not allowed to view this page.</p>
     </div>
 </body>
+<?php require_once("inc/footer.php"); ?>

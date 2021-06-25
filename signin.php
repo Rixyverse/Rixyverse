@@ -25,7 +25,7 @@ if(isset($_SESSION['nickname'])){
                     <?php
                     if(isset($_POST['form-submit'])){
                         if(!empty($_POST['username']) && !empty($_POST['username'])){
-                            $result = getUserData($_POST['username']);
+                            $result = getUserDataByNameID($_POST['username']);
                             if($result==true){
                                 if(password_verify($_POST['password'], $result['password'])){
                                     login($result['id']);
@@ -44,3 +44,4 @@ if(isset($_SESSION['nickname'])){
             </div>
         </div>
     </body>
+    <?php require_once("inc/footer.php"); ?>

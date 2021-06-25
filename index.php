@@ -14,7 +14,7 @@ require_once("inc/connect.php")
                             <h2 class="welcome-message">Welcome to Rixyverse !</h2>
                             <p>Rixyverse is a damn gosh good Miiverse Clone in development and don't exepect so much of this, it's in development.</p>
                             <div class="guest-terms-contents">
-                                <a class="guest-terms-link symbol" href="/info/rules">Rixyverse Rules</a>
+                                <a class="guest-terms-link symbol" href="/info/rules/">Rixyverse Rules</a>
                             </div>
                         </div>
                         <img src="/assets/img/miiglobe.png" />
@@ -51,7 +51,15 @@ require_once("inc/connect.php")
                             </div>
                         </li>
                     </ul>
+                    <div id="community-guide-footer">
+                        <div id="guide-menu">
+                            <a href="https://github.com/Rixyverse" class="arrow-button">Rixyverse on Github</a>
+                            <a href="/info/rules/" class="arrow-button">Rixyverse Rules</a>
+                            <a href="/info/contact/" class="arrow-button">Contact Us</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 </body>
+<?php require_once("inc/footer.php"); ?>

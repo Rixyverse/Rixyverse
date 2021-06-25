@@ -51,3 +51,4 @@ require_once("inc/htm.php");
         </div>
     </div>
 </div>
+<?php require_once("inc/footer.php"); ?>

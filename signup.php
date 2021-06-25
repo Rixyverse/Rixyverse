@@ -47,7 +47,7 @@ if(isset($_SESSION['nickname'])){
                                             <p><span class='red'>User ID already picked or unknown database error !</span></p></div>";
                                             exit;
                                        }
-                                       $result = getUserData($_POST['username']);
+                                       $result = getUserDataByNameID($_POST['username']);
                                         login($result['id']);
                                     }else{
                                         echo "<div class='ll'>
@@ -61,4 +61,5 @@ if(isset($_SESSION['nickname'])){
                         ?>
                     </div>
                 </div>
-            </div> 
+            </div>
+            <?php require_once("inc/footer.php"); ?>

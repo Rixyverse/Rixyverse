@@ -7,3 +7,4 @@ require_once("inc/header.php");
             <p>The page could not be found.</p>
     </div>
 </body>
+<?php require_once("inc/footer.php"); ?>

@@ -7,3 +7,4 @@ require_once("inc/header.php");
             <p>The Activity Feed is not ready for now.Why you don't try other features?</p>
     </div>
 </body>
+<?php require_once("inc/footer.php"); ?>
