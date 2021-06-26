@@ -42,6 +42,14 @@ function getUserDataByToken($token){
     $result2 = getUserDataByID($result['linked_id']);
     return $result2;
 }
-
+function getAvatar($id){
+    $result = getUserDataByID($id);
+    if(!$result['avatar_url']==""){
+        $avatar = $result['avatar_url']; 
+    }else{ 
+        $avatar = "/assets/img/anonymous.png";
+    }
+    return $avatar;
+}
 ?>
 
