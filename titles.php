@@ -1,37 +1,39 @@
+
 <?php
 require_once("inc/connect.php");
-$query = $db->prepare("SELECT * FROM `titles` WHERE `id`=:id");
-$query->execute([
-    "id" => $_GET['id']
-]);
-$result = $query->fetch();
 if (isset($_GET['id'])) {
-    if(is_null($result['id'])){
+    $query = $db->prepare("SELECT * FROM `titles` WHERE `id`=:id");
+    $query->execute([
+        "id" => $_GET['id']
+    ]);
+    $result2 = $query->fetch();
+}
+if (isset($_GET['id'])) {
+    if(is_null($result2['id'])){
         die(require_once("404.php"));
     }
 }else{
     die(require_once("404.php"));
 }
-$title = $result['name'];
+$title = $result2['name'];
 require_once("inc/header.php");
-require_once("inc/htm.php");
 ?>
 <div id="main-body" class="community-top">
         <div id="sidebar">
             <section class="sidebar-container" id="sidebar-community">
                     <span id="sidebar-cover">
-                        <a href="/titles/<?php echo $result['id']; ?>"><img src="<?php echo $result['bannerurl']; ?>"></a>
+                        <a href="/titles/<?php echo $result2['id']; ?>"><img src="<?php echo $result2['bannerurl']; ?>"></a>
                     </span>
                 <header id="sidebar-community-body">
                     <span id="sidebar-community-img">
                         <span class="icon-container">
-                            <a href="/titles/<?php echo $result['id']; ?>"><img src="<?php echo $result['iconurl']; ?>" class="icon"></a>
+                            <a href="/titles/<?php echo $result2['id']; ?>"><img src="<?php echo $result2['iconurl']; ?>" class="icon"></a>
                         </span>
                     </span>
-                    <h1 class="community-name"><a href="/titles/<?php echo $result['id']; ?>"><?php echo $result['name']; ?></a></h1>
+                    <h1 class="community-name"><a href="/titles/<?php echo $result2['id']; ?>"><?php echo $result2['name']; ?></a></h1>
                 </header>
                 <div class="community-description js-community-description">
-                        <div class="text js-truncated-text"><?php echo $result['description']; ?></div>
+                        <div class="text js-truncated-text"><?php echo $result2['description']; ?></div>
                 </div>
             </section>
         </div>
