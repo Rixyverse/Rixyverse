@@ -2,10 +2,10 @@
     color: #fff;
 }
 .post-permalink-button:hover, .favorite-community-link.symbol, .trigger:active, #wrapper, #reply-content button.more-button:hover, .spoiler-button:hover, #sidebar-profile-status, #guide-menu .arrow-button:hover, .community-eyecatch-info:hover, #community-favorite:hover, .big-button:hover, .sidebar-setting a:hover, .multi-timeline-post-list .post.hidden .screenshot-container, .multi-timeline-post-list .post .screenshot-container, .trigger:hover, .textarea-container .community-container, .post-form-album-content, .admin-messages .post.my, #identified-user-banner:hover, .sidebar-setting a.selected, .sidebar-container h4 a:hover, #yeah-content, .sidebar-profile .profile-comment, .post-list .recent-reply-content, .post-list .recent-reply-content .recent-reply-read-more-container:hover, .community-name .owner, .post-list-heading-button, .topic-title-input, .textarea, .yeah-button, .hidden-content-button, .community-description, .file-button-container, .file-button, .repost-error, .messages .post.my, #reply-content .list .my {
-    background-color: var(--theme-darker, #180030) !important;
+    background-color: var(--theme-darker, #181818    ) !important;
 }
 body, #footer, .favorite-community-link.symbol:hover, .post.hidden:hover, .filtering-label, #guide-menu:hover, #post-diary-window, .spoiler-button, .textarea-line, .dialog .window-body, .digest .post .icon-container, .icon-container .icon, #sidebar-profile-body .icon, .sidebar-container, .post .community-container, #global-menu #global-my-menu, .guest#post-permlink .guest-message p, form.search input[type="text"], form.search input[type="submit"], .warning-content, .community-card-list > li, .post-permalink-button, .repost:hover {
-    background-color: var(--theme-dark, #265a29) !important;
+    background-color: var(--theme-dark, #31383a) !important;
 }
 body, .community-title, #footer-selector li button, #footer-inner p a, .post-list.empty, .album-list.empty, .list > .no-content, .no-content, .community-game-title, .arrow-button, .post .hidden-content button, .post .deleted-message button, .post .hidden_as_violation button, .post .hidden-content a, .post .deleted-message a, .post .hidden_as_violation a, .post .community-container-heading a, .list-content-with-icon-and-text .text, .list-content-with-icon-and-text .id-name, #sidebar-profile-body .id-name, #post-diary-window p, .sidebar-container h4 a, .post-list .empathized-user-name, .post-list .acted-user-name, .post-list .recommend-user-title, .headline h2, #post-content .post-content-text, #global-menu li a, #global-menu li button, #sidebar-profile-status .number, .community-name, .community-name a, .community-list .title, .sidebar-setting .sidebar-menu-relation:before, #reply-content button.more-button, .sidebar-profile .profile-comment, .guest#post-permlink .guest-message p, form.search input[type="text"], .community-name .owner, .post-list-heading-button, .topic-title-input, .textarea, .yeah-button, .post-permalink-button, .hidden-content-button, .community-description, #admin-menu ul li:not(.selected) a {
     color: #ccc !important;
@@ -174,17 +174,17 @@ form.search input[type="submit"] {
 }
 
 .topic-categories-container {
-    background: var(--theme-dark, #265a29);
-    -webkit-box-shadow: 0 1px 0 var(--theme-dark, #265a29);
-    -moz-box-shadow: 0 1px 0 var(--theme-dark, #265a29);
-    -ms-box-shadow: 0 1px 0 var(--theme-dark, #265a29);
-    -o-box-shadow: 0 1px 0 var(--theme-dark, #265a29);
-    box-shadow: 0 1px 0 var(--theme-dark, #265a29);
+    background: var(--theme-dark, #31383a);
+    -webkit-box-shadow: 0 1px 0 var(--theme-dark, #31383a);
+    -moz-box-shadow: 0 1px 0 var(--theme-dark, #31383a);
+    -ms-box-shadow: 0 1px 0 var(--theme-dark, #31383a);
+    -o-box-shadow: 0 1px 0 var(--theme-dark, #31383a);
+    box-shadow: 0 1px 0 var(--theme-dark, #31383a);
 }
 .button {
     border: 1px solid rgb(0, 0, 0);
     border-bottom-color: #000;
-    background: var(--theme-dark, #265a29);
+    background: var(--theme-dark, #31383a);
     color: #ccc;
     box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0);
 }
@@ -205,7 +205,7 @@ form.search input[type="submit"] {
 }
 #sidebar-profile-status li a > span {
     display: block;
-    border-right: 1px solid var(--theme-dark, #265a29);
+    border-right: 1px solid var(--theme-dark, #31383a);
 }
 #global-menu li#global-menu-mymenu .icon-container img:not(.official-tag) {
     border: 1px solid #000;
@@ -221,7 +221,7 @@ form.search input[type="submit"] {
 }
 #global-menu #global-my-menu:after {
     border-color: transparent;
-    border-bottom-color: var(--theme-dark, #265a29);
+    border-bottom-color: var(--theme-dark, #31383a);
 }
 .list-content-with-icon-and-text li {
     border-top: 1px solid #000;
@@ -236,30 +236,30 @@ form.search input[type="submit"] {
     color: #696666;
 }
 #community-eyecatch-main > div {
-    background: var(--theme-dark, #265a29);
+    background: var(--theme-dark, #31383a);
     border: 1px solid rgb(0, 0, 0);
 }
 #guide-menu {
-    background: var(--theme-dark, #265a29);
+    background: var(--theme-dark, #31383a);
     border: 1px solid rgb(0, 0, 0);
 }
 #guide-menu .arrow-button {
     border-top: 1px solid #000;
 }
 #community-favorite {
-    background: var(--theme-dark, #265a29);
+    background: var(--theme-dark, #31383a);
     border: 1px solid rgb(0, 0, 0);
 }
 #identified-user-banner {
-    background: var(--theme-dark, #265a29);
+    background: var(--theme-dark, #31383a);
     border: 1px solid rgb(0, 0, 0);
 }
 .digest .post .body {
-    background: var(--theme-dark, #265a29);
+    background: var(--theme-dark, #31383a);
     border: 1px solid rgb(0, 0, 0);
 }
 .digest .post .body:after {
-    border-color: transparent var(--theme-dark, #265a29) transparent transparent;
+    border-color: transparent var(--theme-dark, #31383a) transparent transparent;
 }
 .digest .post .body:before {
     border-color: transparent #000 transparent transparent;
@@ -290,7 +290,7 @@ form.search input[type="submit"] {
     border-color: #000;
 }
 #sub-body {
-    background: var(--theme-dark, #265a29);
+    background: var(--theme-dark, #31383a);
     border-bottom: 2px solid #000;
     box-shadow: 0 0 15px #000;
 }
@@ -317,7 +317,7 @@ form.search input[type="submit"] {
 	background-color: #313131;
 }
 .guest #about {
-    background: var(--theme-dark, #265a29);
+    background: var(--theme-dark, #31383a);
     border-bottom: 2px solid #000;
 }
 .guest .guest-terms-link:hover {
@@ -345,7 +345,7 @@ h2.label-topic_post, h2.label-topic {
     color: #e8316e;
 }
 .post-list-outline {
-    background: var(--theme-dark, #265a29);
+    background: var(--theme-dark, #31383a);
     border: 1px solid rgb(0, 0, 0);
     -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
@@ -437,19 +437,19 @@ border-top: 1px solid #222;
     border: 1px solid rgba(221, 221, 221, 0);
 }
 #wrapper, #image-header-content {
-    background: var(--theme, #8000ff) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAEpElEQVR4nO2dW3LiQBAEE8kmOPae2w7j/ZjFa0CAHi1N16jqABMZlf2pKB1Op9MfgnI8Hun7Puq5q5zPZz4+Pvj+/g55z6yFs4t6zIWWqLBeOEMOwIWWqLD+5lx8AC60RIX1lnPRAbjQEhXWIc7ZB+BCS1RYH3HOOgAXWqLC+oxz8gG40BIV1leckw7AhZaosI7hHH0ALrREhXUs56gDcKElKqxTOF8egAstUWGdyvn0AFxoiQrrHM6HB+BCS1RY53IOHoALLVFhXcJ5dwAutESFdSnn1QG40BIV1gjOnwNwoSUqrFGcHbjQS1RYIzk7F1qiwhrN2e29UNBhXYPzLeSlm3x9ffH5+Zm+UNi3/L7v4z4KvcTydeTDwk/CbmP5WvIh8AAsX08+BB2A5WvKh4ADOJ/Plh+cLTkXHYBKoaDDujXn7ANQKRR0WGtwzjoAlUJBh7UW5+QDUCkUdFhrck46AJVCQYe1NufoA6gNOiUqrBk4Rx1ABtCxUWHNwvnyALKAjokKaybOpweQCfRVVFizcT48gGygz6LCmpFz8AAygj6KCmtWzrsDyAo6FBXWzJxXB5AZ9DYqrNk5fw4gO+jvqLAqcHagAXqJCqsKZ6cCCjqlqnACdCqgKqWqcEL5kqtTAFUpVYUTinxPxQZGhRP+y4eAbwItX4cTruWDp2IXR4UT7uWDp2IXRYUThuWDp2JnR4UTHssHT8XOigonPJcPnoqdHBVOeC0fPBU7KSqcME4+eCp2dFQ4Ybx88FTsqKhwwjT54KnYl1HhhOnywVOxT6PCCfPkg6diH0aFE+bLB0/FDkaFE5bJB0/F3kWFE5bLB0/FXkWFE2Lkg6dif6LCCXHywVOxgA4nxMo/HA6eilXhhHj5x+MxfikUdEpV4YSV5Hdd/AGolKrCCevJh+CpWJVSVThhXfkQeAAqpapwwvryIegAVEpV4YRt5EPQVKxCqSqcsJ182MlUrAonbCsfdjAVq8IJ28uHxqdiVTihjnxoeCpWhRPqyYdGp2JVOKGufGhwKlaFE+rLh8amYlU4IYd8aGgqVoUT8siHRqZiVTghl3xoYCpWhRPyyQfxqVgVTsgpH4SnYlU4Ia98EJ2KVeGE3PJBcCpWhRPyywexqVgVTtCQD/Cm8t9fy1/l+106y4+NknyJqVjLX09++qlYy19XPiSeirX89eVD0qlYy99GPiScirX87eRDsqlYy99WPiSairX87eVDkqlYy68jHxJMxVp+PflQeSrW8uvKh4pTsZZfXz5Umoq1/BzyocJUrOXnkQ8bT8Vafi75sOFUrOXnkw8bTcVafk75sMFUrOXnlQ8rT8Vafm75sOJUrOXnl7/aVKzla8h/f3/f71IoWH7f97yFvPgvlq8hf5WpWMvXkw87WwoFyw+firV8Xfmwk6VQsPzwqVjL15cPjS+FguWHT8VafjvyodGlULD88KlYy29PPjS2FAr1C52SDKzNLIVCjkLHJgtrE0uhkKfQMcnEKr8UCrkKfZVsrNJLoZCv0GfJyCq7FAo5C32UrKySS6GQt9ChZGaVWwqF3IXeJjur1FIo5C/0dxRYO8vfr3yAv3rECG2I4F0DAAAAAElFTkSuQmCC') !important;
+    background: var(--theme, #31383a) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAEpElEQVR4nO2dW3LiQBAEE8kmOPae2w7j/ZjFa0CAHi1N16jqABMZlf2pKB1Op9MfgnI8Hun7Puq5q5zPZz4+Pvj+/g55z6yFs4t6zIWWqLBeOEMOwIWWqLD+5lx8AC60RIX1lnPRAbjQEhXWIc7ZB+BCS1RYH3HOOgAXWqLC+oxz8gG40BIV1leckw7AhZaosI7hHH0ALrREhXUs56gDcKElKqxTOF8egAstUWGdyvn0AFxoiQrrHM6HB+BCS1RY53IOHoALLVFhXcJ5dwAutESFdSnn1QG40BIV1gjOnwNwoSUqrFGcHbjQS1RYIzk7F1qiwhrN2e29UNBhXYPzLeSlm3x9ffH5+Zm+UNi3/L7v4z4KvcTydeTDwk/CbmP5WvIh8AAsX08+BB2A5WvKh4ADOJ/Plh+cLTkXHYBKoaDDujXn7ANQKRR0WGtwzjoAlUJBh7UW5+QDUCkUdFhrck46AJVCQYe1NufoA6gNOiUqrBk4Rx1ABtCxUWHNwvnyALKAjokKaybOpweQCfRVVFizcT48gGygz6LCmpFz8AAygj6KCmtWzrsDyAo6FBXWzJxXB5AZ9DYqrNk5fw4gO+jvqLAqcHagAXqJCqsKZ6cCCjqlqnACdCqgKqWqcEL5kqtTAFUpVYUTinxPxQZGhRP+y4eAbwItX4cTruWDp2IXR4UT7uWDp2IXRYUThuWDp2JnR4UTHssHT8XOigonPJcPnoqdHBVOeC0fPBU7KSqcME4+eCp2dFQ4Ybx88FTsqKhwwjT54KnYl1HhhOnywVOxT6PCCfPkg6diH0aFE+bLB0/FDkaFE5bJB0/F3kWFE5bLB0/FXkWFE2Lkg6dif6LCCXHywVOxgA4nxMo/HA6eilXhhHj5x+MxfikUdEpV4YSV5Hdd/AGolKrCCevJh+CpWJVSVThhXfkQeAAqpapwwvryIegAVEpV4YRt5EPQVKxCqSqcsJ182MlUrAonbCsfdjAVq8IJ28uHxqdiVTihjnxoeCpWhRPqyYdGp2JVOKGufGhwKlaFE+rLh8amYlU4IYd8aGgqVoUT8siHRqZiVTghl3xoYCpWhRPyyQfxqVgVTsgpH4SnYlU4Ia98EJ2KVeGE3PJBcCpWhRPyywexqVgVTtCQD/Cm8t9fy1/l+106y4+NknyJqVjLX09++qlYy19XPiSeirX89eVD0qlYy99GPiScirX87eRDsqlYy99WPiSairX87eVDkqlYy68jHxJMxVp+PflQeSrW8uvKh4pTsZZfXz5Umoq1/BzyocJUrOXnkQ8bT8Vafi75sOFUrOXnkw8bTcVafk75sMFUrOXnlQ8rT8Vafm75sOJUrOXnl7/aVKzla8h/f3/f71IoWH7f97yFvPgvlq8hf5WpWMvXkw87WwoFyw+firV8Xfmwk6VQsPzwqVjL15cPjS+FguWHT8VafjvyodGlULD88KlYy29PPjS2FAr1C52SDKzNLIVCjkLHJgtrE0uhkKfQMcnEKr8UCrkKfZVsrNJLoZCv0GfJyCq7FAo5C32UrKySS6GQt9ChZGaVWwqF3IXeJjur1FIo5C/0dxRYO8vfr3yAv3rECG2I4F0DAAAAAElFTkSuQmCC') !important;
 }
 #yeah-content:before {
     background: url(/assets/img/rks.png) no-repeat 0 0 !important;
 }
 .community-switcher .community-switcher-tab {
-    background-color: var(--theme-dark, #265a29);
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--theme-dark, #265a29)), to(var(--theme-dark, #265a29)), color-stop(0.5, var(--theme-dark, #265a29)));
-    background: -webkit-linear-gradient(top, var(--theme-dark, #265a29) 0%, var(--theme-dark, #265a29) 50%, var(--theme-dark, #265a29) 100%);
-    background: -moz-linear-gradient(top, var(--theme-dark, #265a29) 0%, var(--theme-dark, #265a29) 50%, var(--theme-dark, #265a29) 100%);
-    background: -ms-linear-gradient(top, var(--theme-dark, #265a29) 0%, var(--theme-dark, #265a29) 50%, var(--theme-dark, #265a29) 100%);
-    background: -o-linear-gradient(top, var(--theme-dark, #265a29) 0%, var(--theme-dark, #265a29) 50%, var(--theme-dark, #265a29) 100%);
-    background: linear-gradient(top, var(--theme-dark, #265a29) 0%, var(--theme-dark, #265a29) 50%, var(--theme-dark, #265a29) 100%);
+    background-color: var(--theme-dark, #31383a);
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--theme-dark, #31383a)), to(var(--theme-dark, #31383a)), color-stop(0.5, var(--theme-dark, #31383a)));
+    background: -webkit-linear-gradient(top, var(--theme-dark, #31383a) 0%, var(--theme-dark, #31383a) 50%, var(--theme-dark, #31383a) 100%);
+    background: -moz-linear-gradient(top, var(--theme-dark, #31383a) 0%, var(--theme-dark, #31383a) 50%, var(--theme-dark, #31383a) 100%);
+    background: -ms-linear-gradient(top, var(--theme-dark, #31383a) 0%, var(--theme-dark, #31383a) 50%, var(--theme-dark, #31383a) 100%);
+    background: -o-linear-gradient(top, var(--theme-dark, #31383a) 0%, var(--theme-dark, #31383a) 50%, var(--theme-dark, #31383a) 100%);
+    background: linear-gradient(top, var(--theme-dark, #31383a) 0%, var(--theme-dark, #31383a) 50%, var(--theme-dark, #31383a) 100%);
     border: 1px solid black;
     color: #fff;
 }

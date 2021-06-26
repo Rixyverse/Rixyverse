@@ -305,7 +305,7 @@ body {
   min-width: 320px;
   margin: auto 0;
   text-align: left;
-  background: var(--theme, #25b13d) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAEt0lEQVR4nO2dW3KjQBAEU/hx7r21I+TA3o9ZeSVZwAAN04WqDjCRUVmfRHP6+Pj4Q1DO5zN930c9d5Ou63h/f+d0OoW8Z9bC2UU95kJLVFgvnCEDcKElKqzXnKsH4EJLVFjvOVcNwIWWqLA+4lw8ABdaosI6xLloAC60RIV1jHP2AFxoiQrrFOesAbjQEhXWGs7qAbjQEhXWWs6qAbjQEhXWOZyTA3ChJSqsczlHB+BCS1RYl3AODsCFlqiwLuV8OAAXWqLCuobz1wBcaIkK61rOmwG40BIV1gjOnwG40BIV1ijODlzoJSqskZydCy1RYY3m7J69UNBh3YLzNeSlu7y8vPD29pa+UHhu+X3fx30Ueonl68iHlZ+E3cfyteRD4AAsX08+BA3A8jXlQ8AAuq6z/ODsyblqACqFgg7r3pyLB6BSKOiwtuBcNACVQkGHtRXn7AGoFAo6rC05Zw1ApVDQYW3NWT2A1qBzosKagbNqABlAa6PCmoVzcgBZQGuiwpqJc3QAmUCnosKajXNwANlAx6LCmpHz4QAygg5FhTUr568BZAV9FBXWzJw3A8gMeh8V1uycPwPIDnodFVYFzg40QC9RYRXi1AAFqVIlOAE6GVCRUlU4oXzJ1SmAqpSqwglFvk/FBkaFE/7Lh4BvAi1fhxNu5cPKAVi+Dif8lg8rBmD5OpzwWD4sHIDl63DCsHxYMADL1+GEcfkwcwCWr8MJ0/JhxgAsX4cT6uRD5QAsX4cT6uVDxQAsX4cT5smHiQFYvg4nzJcPIwOwfB1OWCYfBgZg+TqcsFw+PBiA5etwwjr5cDcAy9fhhPXy4WoAlq/DCTHyAZ+KvUSFE+LkAz4VCzqcECv/+/vbp2JVOCFe/vl8jr8UCjqlqnDCNvK/vr7iB6BSqgonbCcfAr4JvI5KqSqcsK18CByASqkqnLC9fAgagEqpKpywj3wIGIBKqSqcsJ98WDkAlVJVOGFf+bBiACqlqnDC/vJh4QBUSlXhhDbyYcEAVEpV4YR28mHmAFRKVeGEtvJhxgBUSlXhhPbyoXIAKqWqcEIO+VAxAJVSVTghj3yYGIBKqSqckEs+jAxApVQVTsgnHwYGoFKqCifklA/Cp2JVOCGvfBA9FavCCbnlg+CpWBVOyC8fxE7FqnCChnyAV5X//lp+vHyAzvJjoyRf4lSs5W8nP/2pWMvfVj4kPhVr+dvLh6SnYi1/H/mQ8FSs5e8nH5KdirX8feVDolOxlr+/fEhyKtby28iHBKdiLb+dfGh8Ktby28qHhqdiLb+9fGh0Ktbyc8iHBqdiLT+PfNj5VKzl55IPO56Ktfx88mGnU7GWn1M+7HAq1vLzyoeNT8Vafm75sOGpWMvPL3+zU7GWryH/8/PzeS+FguX3fc9ryIv/Yvka8jc5FWv5evLhyS6FguWHn4q1fF358CSXQsHyw0/FWr6+fDj4pVCw/PBTsZZ/HPlw0EuhYPnhp2It/3jy4WCXQqF9oXOSgfUwl0IhR6G1ycJ6iEuhkKfQmmRilb8UCrkKnUo2VulLoZCv0LFkZJW9FAo5Cx1KVlbJS6GQt9BHycwqdykUchd6n+ysUpdCIX+h11Fg7Sz/eeUD/AXO4Q/m+yiT4QAAAABJRU5ErkJggg==');
+  background: var(--theme, #d9e4e7) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAEt0lEQVR4nO2dW3KjQBAEU/hx7r21I+TA3o9ZeSVZwAAN04WqDjCRUVmfRHP6+Pj4Q1DO5zN930c9d5Ou63h/f+d0OoW8Z9bC2UU95kJLVFgvnCEDcKElKqzXnKsH4EJLVFjvOVcNwIWWqLA+4lw8ABdaosI6xLloAC60RIV1jHP2AFxoiQrrFOesAbjQEhXWGs7qAbjQEhXWWs6qAbjQEhXWOZyTA3ChJSqsczlHB+BCS1RYl3AODsCFlqiwLuV8OAAXWqLCuobz1wBcaIkK61rOmwG40BIV1gjOnwG40BIV1ijODlzoJSqskZydCy1RYY3m7J69UNBh3YLzNeSlu7y8vPD29pa+UHhu+X3fx30Ueonl68iHlZ+E3cfyteRD4AAsX08+BA3A8jXlQ8AAuq6z/ODsyblqACqFgg7r3pyLB6BSKOiwtuBcNACVQkGHtRXn7AGoFAo6rC05Zw1ApVDQYW3NWT2A1qBzosKagbNqABlAa6PCmoVzcgBZQGuiwpqJc3QAmUCnosKajXNwANlAx6LCmpHz4QAygg5FhTUr568BZAV9FBXWzJw3A8gMeh8V1uycPwPIDnodFVYFzg40QC9RYRXi1AAFqVIlOAE6GVCRUlU4oXzJ1SmAqpSqwglFvk/FBkaFE/7Lh4BvAi1fhxNu5cPKAVi+Dif8lg8rBmD5OpzwWD4sHIDl63DCsHxYMADL1+GEcfkwcwCWr8MJ0/JhxgAsX4cT6uRD5QAsX4cT6uVDxQAsX4cT5smHiQFYvg4nzJcPIwOwfB1OWCYfBgZg+TqcsFw+PBiA5etwwjr5cDcAy9fhhPXy4WoAlq/DCTHyAZ+KvUSFE+LkAz4VCzqcECv/+/vbp2JVOCFe/vl8jr8UCjqlqnDCNvK/vr7iB6BSqgonbCcfAr4JvI5KqSqcsK18CByASqkqnLC9fAgagEqpKpywj3wIGIBKqSqcsJ98WDkAlVJVOGFf+bBiACqlqnDC/vJh4QBUSlXhhDbyYcEAVEpV4YR28mHmAFRKVeGEtvJhxgBUSlXhhPbyoXIAKqWqcEIO+VAxAJVSVTghj3yYGIBKqSqckEs+jAxApVQVTsgnHwYGoFKqCifklA/Cp2JVOCGvfBA9FavCCbnlg+CpWBVOyC8fxE7FqnCChnyAV5X//lp+vHyAzvJjoyRf4lSs5W8nP/2pWMvfVj4kPhVr+dvLh6SnYi1/H/mQ8FSs5e8nH5KdirX8feVDolOxlr+/fEhyKtby28iHBKdiLb+dfGh8Ktby28qHhqdiLb+9fGh0Ktbyc8iHBqdiLT+PfNj5VKzl55IPO56Ktfx88mGnU7GWn1M+7HAq1vLzyoeNT8Vafm75sOGpWMvPL3+zU7GWryH/8/PzeS+FguX3fc9ryIv/Yvka8jc5FWv5evLhyS6FguWHn4q1fF358CSXQsHyw0/FWr6+fDj4pVCw/PBTsZZ/HPlw0EuhYPnhp2It/3jy4WCXQqF9oXOSgfUwl0IhR6G1ycJ6iEuhkKfQmmRilb8UCrkKnUo2VulLoZCv0LFkZJW9FAo5Cx1KVlbJS6GQt9BHycwqdykUchd6n+ysUpdCIX+h11Fg7Sz/eeUD/AXO4Q/m+yiT4QAAAABJRU5ErkJggg==');
   background-attachment: fixed;
 }
 #sub-body {
@@ -1528,7 +1528,7 @@ h2.label-topic .with-filter-right {
   border: 1px solid #ddd;
 }
 .user-community.official-user .icon-container:after {
-  content: url("/img/official-user-mini.png");
+  content: url("/assets/img/official-user-mini.png");
   position: absolute;
   display: block;
   top: 20px;
@@ -4239,7 +4239,7 @@ p.note-jasrac {
 p.note-jasrac span {
   white-space: nowrap;
 }
-.guest #footer {
+#footer {
   text-align: center;
 }
 .guest .guest-message p {
@@ -7446,7 +7446,7 @@ div.search .search-content p.note {
   border-bottom: none;
   text-align: center;
   display: block;
-  color: #6000c0;
+  color: blue;
 }
 .warning-content-forward > div p {
   display: inline-block;
