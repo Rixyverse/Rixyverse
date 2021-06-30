@@ -5,5 +5,8 @@ RewriteRule ^activity\/ /activity.php
 RewriteRule ^login\/ /signin.php
 RewriteRule ^signup\/ /signup.php
 RewriteRule ^logout\/ /logout.php
+RewriteRule ^notifs\/ /notifications.php
+RewriteRule ^messages\/ /lol.php
+RewriteRule ^users\/([^\/]+)$ /profile.php?id=$1
 RewriteRule ^titles\/([0-9]+)[\/]?$ /titles.php?id=$1
-php_value display_errors 1
+php_value display_error 1
