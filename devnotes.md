@@ -1,17 +1,19 @@
 # Actual implemented features:
 -Account Creation
 
--Partial login (you can't login with the login page but you've logged in when you create an account)
-
 -Titles shows (but posts not working)
 
--Home page (but no logic)
+-Home page
 
--Login page
+-Login
 
 -DB Connection
 
 -Header
+
+-Partial profile
+
+-Basic tokens
 
 # What to do next:
 -Activity Feed
@@ -22,14 +24,8 @@
 
 -Title Creation
 
--Logic of the home page
-
 -Settings
 
 -Header's menu
 
--Footer
-
--Profile
-
--Tokens
+-CSRF Tokens
