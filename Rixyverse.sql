@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : ven. 25 juin 2021 à 14:32
--- Version du serveur :  8.0.25-0ubuntu0.21.04.1
+-- Généré le : lun. 16 août 2021 à 18:24
+-- Version du serveur :  8.0.26-0ubuntu0.21.04.3
 -- Version de PHP : 7.4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -42,22 +42,29 @@ CREATE TABLE `posts` (
 
 CREATE TABLE `titles` (
   `id` int NOT NULL,
-  `name` varchar(255) COLLATE utf8_bin NOT NULL,
-  `description` varchar(255) COLLATE utf8_bin NOT NULL,
-  `bannerurl` varchar(255) COLLATE utf8_bin NOT NULL,
-  `iconurl` varchar(255) COLLATE utf8_bin NOT NULL
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `description` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `bannerurl` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `iconurl` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `type` tinyint NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
 
--- --------------------------------------------------------
 
 --
 -- Structure de la table `tokens`
 --
 
 CREATE TABLE `tokens` (
-  `token` varchar(255) COLLATE utf8_bin NOT NULL,
+  `token` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `linked_id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
+
+--
+-- Déchargement des données de la table `tokens`
+--
+
+INSERT INTO `tokens` (`token`, `linked_id`) VALUES
+('I1wmhqlPz8e09jui3gRF', 1);
 
 -- --------------------------------------------------------
 
@@ -67,12 +74,12 @@ CREATE TABLE `tokens` (
 
 CREATE TABLE `users` (
   `id` int NOT NULL,
-  `nameid` varchar(255) COLLATE utf8_bin NOT NULL,
-  `nickname` varchar(255) COLLATE utf8_bin NOT NULL,
-  `password` varchar(255) COLLATE utf8_bin NOT NULL,
+  `nameid` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `nickname` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `level` int NOT NULL,
-  `description` text COLLATE utf8_bin NOT NULL,
-  `avatarurl` varchar(255) COLLATE utf8_bin NOT NULL,
+  `description` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `avatarurl` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `datecreated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
 
@@ -119,13 +126,13 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT pour la table `titles`
 --
 ALTER TABLE `titles`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
