@@ -25,10 +25,10 @@ if(isset($_SESSION['nickname'])){
                     <?php
                     if(isset($_POST['form-submit'])){
                         if(!empty($_POST['username']) && !empty($_POST['username'])){
-                            $result = getUserDataByNameID($_POST['username']);
-                            if($result==true){
-                                if(password_verify($_POST['password'], $result['password'])){
-                                    login($result['id']);
+                            $result2 = getUserDataByNameID($_POST['username']);
+                            if($result2==true){
+                                if(password_verify($_POST['password'], $result2['password'])){
+                                    login($result2['id']);
                                 }else{
                                     echo "<div class='ll'>
                                     <p><span class='red'>Password incorrect!</span></p></div>";

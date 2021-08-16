@@ -4,8 +4,7 @@ require_once("inc/header.php");
 ?>
 <body>
     <div class="no-content">
-            <?php require_once("inc/itrllyisnt.php"); ?>
-            <p>Loading Activity Feed...</p> <!-- classic trick to say "Activity feed is loading, but it's really not." -->
+            <p>The Activity Feed is not ready for now.Why you don't try other features?</p>
     </div>
 </body>
 <?php require_once("inc/footer.php"); ?>

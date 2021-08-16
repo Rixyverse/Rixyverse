@@ -39,18 +39,50 @@ require_once("inc/connect.php")
                 <div class="community-main">
                     <h3 class="community-title">Featured Communities</h3>
                     <ul class="list community-list community-card-list test-community-list-item">
-                        <li class="trigger" data-href="/communities/1">
-                            <img src="/assets/img/gnrl_banner.gif" class="community-list-cover">
-                            <div class="community-list-body">
-                                <span class="icon-container">
-                                    <img class="icon" src="/assets/img/gnrl_icon.gif">
-                                </span>
-                                <div class="body">
-                                    <a class="title" href="/titles/1">General Discussion Community</a>
+                        <?php
+                        $query = $db->prepare("SELECT * FROM `titles` WHERE `type`=1");
+                        $query->execute();
+                        $result2 = $query->fetchAll();
+                        if(empty($result2)){?>
+                        <h2 class="community-title">No communities have been featured yet.</h2>
+                        <?php }
+                        foreach($result2 as $title){ ?>
+                            <li class="trigger" data-href="/titles/<?php echo $title['id'] ?>">
+                                <img src="<?php echo $title['bannerurl'] ?>" class="community-list-cover">
+                                <div class="community-list-body">
+                                    <span class="icon-container">
+                                        <img class="icon" src="<?php echo $title['iconurl'] ?>">
+                                    </span>
+                                    <div class="body">
+                                        <a class="title" href="/titles/<?php echo $title['id'] ?>"><?php echo $title['name'] ?></a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
+                        <?php } ?>
                     </ul>
+                    <h3 class="community-title">Recent Communities</h3>
+                    <ul class="list community-list community-card-list test-community-list-item">
+                        <?php
+                        $query = $db->prepare("SELECT * FROM `titles` WHERE `id`<5");
+                        $query->execute();
+                        $result2 = $query->fetchAll();
+                        if(empty($result2)){?>
+                        <h2 class="community-title">No communities have been created yet.</h2>
+                        <?php }
+                        foreach($result2 as $title){ ?>
+                            <li class="trigger" data-href="/titles/<?php echo $title['id'] ?>">
+                                <div class="community-list-body">
+                                    <span class="icon-container">
+                                        <img class="icon" src="<?php echo $title['iconurl'] ?>">
+                                    </span>
+                                    <div class="body">
+                                        <a class="title" href="/titles/<?php echo $title['id'] ?>"><?php echo $title['name'] ?></a>
+                                    </div>
+                                </div>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                    <a href="/titles/list" class="big-button">Show more</a>
                     <div id="community-guide-footer">
                         <div id="guide-menu">
                             <a href="https://github.com/Rixyverse" class="arrow-button">Rixyverse on Github</a>

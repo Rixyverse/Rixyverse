@@ -47,8 +47,8 @@ if(isset($_SESSION['nickname'])){
                                             <p><span class='red'>User ID already picked or unknown database error !</span></p></div>";
                                             exit;
                                        }
-                                       $result = getUserDataByNameID($_POST['username']);
-                                        login($result['id']);
+                                       $result2 = getUserDataByNameID($_POST['username']);
+                                        login($result2['id']);
                                     }else{
                                         echo "<div class='ll'>
                                         <p><span class='red'>Passwords don't match!</span></p></div>";
