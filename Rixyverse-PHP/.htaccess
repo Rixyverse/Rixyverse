@@ -1,0 +1,12 @@
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+RewriteEngine on
+RewriteRule ^activity\/ /activity.php
+RewriteRule ^login\/ /signin.php
+RewriteRule ^signup\/ /signup.php
+RewriteRule ^logout\/ /logout.php
+RewriteRule ^notifs\/ /notifications.php
+RewriteRule ^messages\/ /lol.php
+RewriteRule ^users\/([^\/]+)$ /profile.php?id=$1
+RewriteRule ^titles\/([0-9]+)[\/]?$ /titles.php?id=$1
+RewriteRule ^titles\/list /title-list.php
