@@ -381,7 +381,7 @@ h2.label-topic_post, h2.label-topic {
     -ms-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
     -o-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-    background-color: var(--theme-dark, #265a29);
+    background-color: var(--theme-dark, #323232);
     color: #ccc;
 }
 form.search {

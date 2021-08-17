@@ -76,7 +76,7 @@ require_once("inc/header.php");
             <div class="body-content" id="community-post-list">
                 <div class="list post-list">
                     <?php
-                    $query = $db->prepare("SELECT * FROM `posts` WHERE `linkedtitleid`=".$result2['id']);
+                    $query = $db->prepare("SELECT * FROM `posts` WHERE `linkedtitleid`=".$result2['id']." ORDER BY `id` DESC");
                     $query->execute();
                     $result2 = $query->fetchAll();
                     foreach($result2 as $post){
