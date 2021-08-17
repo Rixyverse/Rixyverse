@@ -31,7 +31,8 @@ CREATE TABLE `posts` (
   `id` int NOT NULL,
   `linkedtitleid` int NOT NULL,
   `author` int NOT NULL,
-  `content` int NOT NULL
+  `content` int NOT NULL,
+  `feeling` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
