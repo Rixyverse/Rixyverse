@@ -18,6 +18,8 @@ if(isset($_SESSION['token'])){
         <meta property="og:type" content="article">
         <meta property="og:image" content="/assets/img/favicon.png">
         <meta property="og:site_name" content="Rixyverse">
+        <script src="/assets/js/rixyverse.js"></script>
+        <noscript>You need JavaScript to run this app.</noscript>
     </head>
     <?php if(!isset($_SESSION['token'])){ ?>
     <body class="guest">
