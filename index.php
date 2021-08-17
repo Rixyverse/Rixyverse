@@ -47,7 +47,7 @@ require_once("inc/connect.php")
                         <h2 class="community-title">No communities have been featured yet.</h2>
                         <?php }
                         foreach($result2 as $title){ ?>
-                            <li class="trigger" data-href="/titles/<?php echo $title['id'] ?>">
+                            <li class="trigger">
                                 <img src="<?php echo $title['bannerurl'] ?>" class="community-list-cover">
                                 <div class="community-list-body">
                                     <span class="icon-container">
@@ -70,7 +70,7 @@ require_once("inc/connect.php")
                         <h2 class="community-title">No communities have been created yet.</h2>
                         <?php }
                         foreach($result2 as $title){ ?>
-                            <li class="trigger" data-href="/titles/<?php echo $title['id'] ?>">
+                            <li class="trigger">
                                 <div class="community-list-body">
                                     <span class="icon-container">
                                         <img class="icon" src="<?php echo $title['iconurl'] ?>">

@@ -26,7 +26,7 @@ if(!isset($_SESSION['token'])){?>
                                         <h2 class="community-title">No communities have been created yet.</h2>
                                 <?php }
                                 foreach($result2 as $title){ ?>
-                                    <li class="trigger" data-href="/titles/<?php echo $title['id'] ?>">
+                                    <li class="trigger">
                                         <div class="community-list-body">
                                             <span class="icon-container">
                                                 <img src="<?php echo $title['iconurl'] ?>" class="icon">
