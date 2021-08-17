@@ -7,6 +7,12 @@ if(isset($_SESSION['token'])){
     require_once("inc/user-sidebar.php");
 }
 ?>
+<?php
+if(!isset($_SESSION['token'])){?>
+<body>
+    <div id="container">
+            <div id="main-body" class="guest-top">
+<?php } ?>
                 <div class="main-column">
                     <div class="post-list-outline">
                         <div class="body-content" id="community-top">
