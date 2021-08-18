@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : lun. 16 août 2021 à 18:24
+-- Généré le : mer. 18 août 2021 à 13:04
 -- Version du serveur :  8.0.26-0ubuntu0.21.04.3
 -- Version de PHP : 7.4.16
 
@@ -31,8 +31,21 @@ CREATE TABLE `posts` (
   `id` int NOT NULL,
   `linkedtitleid` int NOT NULL,
   `author` int NOT NULL,
-  `content` int NOT NULL,
+  `content` text COLLATE utf8_bin NOT NULL,
   `feeling` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `replies`
+--
+
+CREATE TABLE `replies` (
+  `id` int NOT NULL,
+  `to_id` int NOT NULL,
+  `by_user` int NOT NULL,
+  `content` text COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -50,6 +63,7 @@ CREATE TABLE `titles` (
   `type` tinyint NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
 
+-- --------------------------------------------------------
 
 --
 -- Structure de la table `tokens`
@@ -59,13 +73,6 @@ CREATE TABLE `tokens` (
   `token` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `linked_id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
-
---
--- Déchargement des données de la table `tokens`
---
-
-INSERT INTO `tokens` (`token`, `linked_id`) VALUES
-('I1wmhqlPz8e09jui3gRF', 1);
 
 -- --------------------------------------------------------
 
@@ -84,6 +91,28 @@ CREATE TABLE `users` (
   `datecreated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `yeahs`
+--
+
+CREATE TABLE `yeahs` (
+  `to_id` int NOT NULL,
+  `by_user` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `yeahs_replies`
+--
+
+CREATE TABLE `yeahs_replies` (
+  `to_id` int NOT NULL,
+  `by_user` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
+
 --
 -- Index pour les tables déchargées
 --
@@ -92,6 +121,12 @@ CREATE TABLE `users` (
 -- Index pour la table `posts`
 --
 ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `replies`
+--
+ALTER TABLE `replies`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -121,6 +156,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `posts`
 --
 ALTER TABLE `posts`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `replies`
+--
+ALTER TABLE `replies`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
