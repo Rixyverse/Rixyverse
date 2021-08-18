@@ -9,4 +9,5 @@ RewriteRule ^notifs\/ /notifications.php
 RewriteRule ^messages\/ /lol.php
 RewriteRule ^users\/([^\/]+)$ /profile.php?id=$1
 RewriteRule ^titles\/([0-9]+)[\/]?$ /titles.php?id=$1
+RewriteRule ^posts\/([0-9]+)[\/]?$ /post-view.php?id=$1
 RewriteRule ^titles\/list /title-list.php
