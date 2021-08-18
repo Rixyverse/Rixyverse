@@ -94,30 +94,35 @@ require_once("inc/header.php");
                             <div class="body post-content">
                                 <p class="post-content-text"><?php echo $post['content'] ?></p>
                                 <div class="post-meta">
-                                    <button type="button" class="symbol submit yeah-button">
+                                <button name="yeah" type="submit" class="symbol submit yeah-button">
+                                    <?php 
+                                    switch($result2['feeling']){
+                                        case 0:?>
+                                            <span class="yeah-button-text">Yeah!</span>
+                                        <?php
+                                            break; 
+                                        case 1: ?>
+                                            <span class="yeah-button-text">Yeah!</span>
                                         <?php 
-                                        switch($post['feeling']){
-                                            case 0:?>
-                                                <span class="yeah-button-text">Yeah!</span>
-                                            <?php
-                                                break; 
-                                            case 1: ?>
-                                                <span class="yeah-button-text">Yeah!</span>
-                                            <?php 
-                                                break;
-                                            case 2: ?>
-                                                <span class="yeah-button-text">Yeah♥</span>
-                                            <?php 
-                                                break;
-                                            case 3: ?>
-                                                <span class="yeah-button-text">Yeah...</span>
-                                            <?php 
-                                                break;
-                                            case 4: 
-                                            ?>
-                                                <span class="yeah-button-text">Yeah...</span>
-                                        <?php   break;
-                                            } ?>
+                                            break;
+                                        case 2: ?>
+                                            <span class="yeah-button-text">Yeah♥</span>
+                                        <?php 
+                                            break;
+                                        case 3: ?>
+                                            <span class="yeah-button-text">Yeah?!</span>
+                                        <?php 
+                                            break;
+                                        case 4: 
+                                        ?>
+                                            <span class="yeah-button-text">Yeah...</span>
+                                        <?php
+                                            break;
+                                        case 5:
+                                        ?>
+                                            <span class="yeah-button-text">Yeah...</span>
+                                    <?php   break;
+                                        } ?>
                                     </button>
                                     <div class="yeah symbol"><span class="symbol-label">Yeahs</span><span class="empathy-count"><?php echo $yeah ?></span></div>
                                     <div class="reply symbol"><span class="symbol-label">Replies</span><span class="reply-count"><?php echo $replies ?></span></div>        

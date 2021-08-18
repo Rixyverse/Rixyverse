@@ -78,10 +78,15 @@ $replies = getNumberOfReplies($result2['id']);
                                         <?php 
                                             break;
                                         case 3: ?>
-                                            <span class="yeah-button-text">Yeah...</span>
+                                            <span class="yeah-button-text">Yeah?!</span>
                                         <?php 
                                             break;
                                         case 4: 
+                                        ?>
+                                            <span class="yeah-button-text">Yeah...</span>
+                                        <?php
+                                            break;
+                                        case 5:
                                         ?>
                                             <span class="yeah-button-text">Yeah...</span>
                                     <?php   break;
