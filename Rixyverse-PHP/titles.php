@@ -80,7 +80,9 @@ require_once("inc/header.php");
                     $query->execute();
                     $result2 = $query->fetchAll();
                     foreach($result2 as $post){
-                        $author = getUserDataByID($post['author']) ?>
+                        $author = getUserDataByID($post['author']);
+                        $yeah = getNumberOfYeahs($post['id']);
+                        $replies = getNumberOfReplies($post['id']); ?>
                         <div id="<?php echo $post['id'] ?>" data-href="/posts/<?php echo $post['id'] ?>" class="post trigger" tabindex="0">
                             <a href="/users/<?php echo $author['nameid'] ?>" class="icon-container">
                                 <img src="<?php echo getAvatar($post['author']) ?>" class="icon">
@@ -92,8 +94,33 @@ require_once("inc/header.php");
                             <div class="body post-content">
                                 <p class="post-content-text"><?php echo $post['content'] ?></p>
                                 <div class="post-meta">
-                                    <div class="yeah symbol"><span class="symbol-label">Yeahs</span><span class="empathy-count">wip</span></div>
-                                    <div class="reply symbol"><span class="symbol-label">Replies</span><span class="reply-count">wip</span></div>        
+                                    <button type="button" class="symbol submit yeah-button">
+                                        <?php 
+                                        switch($post['feeling']){
+                                            case 0:?>
+                                                <span class="yeah-button-text">Yeah!</span>
+                                            <?php
+                                                break; 
+                                            case 1: ?>
+                                                <span class="yeah-button-text">Yeah!</span>
+                                            <?php 
+                                                break;
+                                            case 2: ?>
+                                                <span class="yeah-button-text">Yeah♥</span>
+                                            <?php 
+                                                break;
+                                            case 3: ?>
+                                                <span class="yeah-button-text">Yeah...</span>
+                                            <?php 
+                                                break;
+                                            case 4: 
+                                            ?>
+                                                <span class="yeah-button-text">Yeah...</span>
+                                        <?php   break;
+                                            } ?>
+                                    </button>
+                                    <div class="yeah symbol"><span class="symbol-label">Yeahs</span><span class="empathy-count"><?php echo $yeah ?></span></div>
+                                    <div class="reply symbol"><span class="symbol-label">Replies</span><span class="reply-count"><?php echo $replies ?></span></div>        
                                 </div>
                             </div>
                         </div>
