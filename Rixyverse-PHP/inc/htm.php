@@ -44,12 +44,26 @@ function getUserDataByToken($token){
 }
 function getAvatar($id){
     $result = getUserDataByID($id);
-    if(!$result['avatar_url']==""){
+    if(!empty($result['avatar_url'])){
         $avatar = $result['avatar_url']; 
     }else{ 
         $avatar = "/assets/img/anonymous.png";
     }
     return $avatar;
+}
+function getNumberOfYeahs($id){
+    global $db;
+    $query = $db->prepare("SELECT COUNT(*) FROM yeahs WHERE to_id=".$id);
+    $query->execute();
+    $result = $query->fetch();
+    return $result['COUNT(*)'];
+}
+function getNumberOfReplies($id){
+    global $db;
+    $query = $db->prepare("SELECT COUNT(*) FROM replies WHERE to_id=".$id);
+    $query->execute();
+    $result = $query->fetch();
+    return $result['COUNT(*)'];
 }
 ?>
 
