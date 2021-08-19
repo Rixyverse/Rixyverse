@@ -53,7 +53,7 @@ if(isset($_SESSION['token'])){
                                         <menu id="global-my-menu" class="invisible none">
                                             <li><a href="/settings/profile" class="symbol my-menu-profile-setting"><span>Profile Settings</span></a></li>
                                             <li><a href="#" class="symbol my-menu-account-setting"><span>Account Settings</span></a></li>
-                                            <li><a href="/info/rules" class="symbol my-menu-guide"><span>Rixy Rules</span></a></li>
+                                            <li><a href="/info/rules" class="symbol my-menu-guide"><span>Rixyverse Rules</span></a></li>
                                             <li><a href="/info/contact" class="symbol my-menu-info"><span>Contact the Team</span></a></li>
                                             <li><a href="/blocked" class="symbol my-menu-block"><span>Blocked Users</span></a></li>
                                             <li><form action="/logout/" method="post" id="my-menu-logout" class="symbol"><input type="submit" value="Log out"></form></li>
