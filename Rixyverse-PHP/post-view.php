@@ -17,6 +17,9 @@ if (isset($_GET['id'])) {
 }
 if(isset($_SESSION['token'])){
     $user = getUserDataByToken($_SESSION['token']);
+    $query4=$db->prepare("SELECT * FROM `yeahs` WHERE `by_user`=".$user['id']." AND `to_id`=".$result2['id']);
+    $query4->execute();
+    $result4 = $query4->fetch();
 }
 $author = getUserDataByID($result2['author']);
 $title = $author['nickname']."'s post";
@@ -61,8 +64,39 @@ $replies = getNumberOfReplies($result2['id']);
                     <div id="the-post">
                         <div class="post-content-text"><p><?php echo $result2['content'] ?></p></div>
                         <div class="post-meta">
+                            <?php
+                            if(isset($_POST['yeah'])){
+                                if(isset($_SESSION['token'])){
+                                    if(is_null($result4['by_user'])){
+                                        $query = $db->prepare("INSERT INTO `yeahs`(`to_id`, `by_user`) VALUES('".$result2['id']."', ".$user['id'].")");
+                                        $query->execute();
+                                        $yeah = getNumberOfYeahs($result2['id']);
+                                        $replies = getNumberOfReplies($result2['id']);
+                                        $query4=$db->prepare("SELECT * FROM `yeahs` WHERE `by_user`=".$user['id']." AND `to_id`=".$result2['id']);
+                                        $query4->execute();
+                                        $result4 = $query4->fetch();
+                                    }
+                                }
+                            }
+                            if(isset($_POST['unyeah'])){
+                                if(isset($_SESSION['token'])){
+                                    if(!is_null($result4['by_user'])){
+                                        $query = $db->prepare("DELETE FROM `yeahs` WHERE `by_user`=".$user['id']." AND `to_id`=".$result2['id']);
+                                        $query->execute();
+                                        $yeah = getNumberOfYeahs($result2['id']);
+                                        $replies = getNumberOfReplies($result2['id']);
+                                        $query4=$db->prepare("SELECT * FROM `yeahs` WHERE `by_user`=".$user['id']." AND `to_id`=".$result2['id']);
+                                        $query4->execute();
+                                        $result4 = $query4->fetch();
+                                    }
+                                }
+                            }
+                            ?>
                             <form method='POST'>
-                                <button name="yeah" type="submit" class="symbol submit yeah-button">
+                                <?php
+                                if(isset($_SESSION['token'])){
+                                    if(is_null($result4['by_user'])){?>
+                                    <button name="yeah" type="submit" class="symbol submit yeah-button">
                                     <?php 
                                     switch($result2['feeling']){
                                         case 0:?>
@@ -90,7 +124,11 @@ $replies = getNumberOfReplies($result2['id']);
                                         ?>
                                             <span class="yeah-button-text">Yeah...</span>
                                     <?php   break;
-                                        } ?>
+                                        }
+                                    }else{ ?>
+                                        <button name="unyeah" type="submit" class="symbol submit yeah-button"><span class="yeah-button-text">Unyeah</span>
+                                <?php }
+                                 } ?>
                                 </button>
                                 <div class="yeah symbol"><span class="symbol-label">Yeahs</span><span class="empathy-count"><?php echo $yeah ?></span></div>
                                 <div class="reply symbol"><span class="symbol-label">Replies</span><span class="reply-count"><?php echo $replies ?></span></div>
