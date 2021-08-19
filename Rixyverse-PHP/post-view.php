@@ -128,7 +128,38 @@ $replies = getNumberOfReplies($result2['id']);
                                     }else{ ?>
                                         <button name="unyeah" type="submit" class="symbol submit yeah-button"><span class="yeah-button-text">Unyeah</span>
                                 <?php }
-                                 } ?>
+                                }else{ ?>
+                                <button name="yeah" type="submit" class="symbol submit yeah-button" disabled>
+                                    <?php 
+                                    switch($post['feeling']){
+                                        case 0:?>
+                                            <span class="yeah-button-text">Yeah!</span>
+                                        <?php
+                                            break; 
+                                        case 1: ?>
+                                            <span class="yeah-button-text">Yeah!</span>
+                                        <?php 
+                                            break;
+                                        case 2: ?>
+                                            <span class="yeah-button-text">Yeah♥</span>
+                                        <?php 
+                                            break;
+                                        case 3: ?>
+                                            <span class="yeah-button-text">Yeah?!</span>
+                                        <?php 
+                                            break;
+                                        case 4: 
+                                        ?>
+                                            <span class="yeah-button-text">Yeah...</span>
+                                        <?php
+                                            break;
+                                        case 5:
+                                        ?>
+                                            <span class="yeah-button-text">Yeah...</span>
+                                    <?php   break;
+                                        }
+                                        ?>
+                                <?php } ?>
                                 </button>
                                 <div class="yeah symbol"><span class="symbol-label">Yeahs</span><span class="empathy-count"><?php echo $yeah ?></span></div>
                                 <div class="reply symbol"><span class="symbol-label">Replies</span><span class="reply-count"><?php echo $replies ?></span></div>
