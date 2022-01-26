@@ -1,3 +1,5 @@
+### EDIT FROM 26/01/22: Rixyverse is now open-sourced. Please don't look at the code it's sooo bad that I cry when seeing it again.
+### If you still wish contributing to this pretty dead shitty Miiverse Clone, you can open a pull request with changes you've made.
 <p align="center"><img src="https://i.imgur.com/15iUc2N.png"></img></p>
 
 
